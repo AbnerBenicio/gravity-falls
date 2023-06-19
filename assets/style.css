@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppinsdisplay=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, "Poppins";
+}
+
+.container {
+  background-image: url(./images/mystery_shack.png);
+  color: #fff;
+}
+
+.container .background {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.container .info {
+  width: 450px;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.8);
+}
