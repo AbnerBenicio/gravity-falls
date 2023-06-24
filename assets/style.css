@@ -7,6 +7,10 @@
   font-family: sans-serif, "Poppins";
 }
 
+body {
+  background-color: #000;
+}
+
 .container {
   color: #fff;
   display: flex;
@@ -50,26 +54,60 @@
   animation: slide-right 0.5s linear;
 }
 
-.buttons {
+.selector {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 25vh;
-  width: 100%;
-  background-color: #000;
-  gap: 20px;
+  gap: 15px;
 }
 
-button {
+.arrow {
+  color: #fff;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carrosel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  width: 250px;
+}
+
+.carrosel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.carrosel-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carrosel {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 25vh;
+  gap: 15px;
+}
+
+.item {
   width: 100px;
   height: 100px;
   border: solid #414040 1px;
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgb(100, 99, 99);
   cursor: pointer;
+}
+
+.item.active {
+  opacity: 1;
 }
 
 @keyframes slide-right {

@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/assets/style.css" />
     <title>Gravity Falls</title>
   </head>
@@ -89,37 +96,50 @@
         />
       </div>
 
-      <div class="buttons">
-        <button
-          class="dipper"
-          style="background-image: url(./assets/images/dipper.png)"
-        ></button>
-        <button
-          class="mabel"
-          style="background-image: url(./assets/images/mabel.png)"
-        ></button>
-        <button
-          class="stanley"
-          style="background-image: url(./assets/images/stanley.png)"
-        ></button>
-        <button
-          class="ford"
-          style="background-image: url(./assets/images/ford.png)"
-        ></button>
-        <button
-          class="soos"
-          style="background-image: url(./assets/images/soos.png)"
-        ></button>
-        <button
-          class="wendy"
-          style="background-image: url(./assets/images/wendy.png)"
-        ></button>
-        <button
-          class="gideon"
-          style="background-image: url(./assets/images/gideon.png)"
-        ></button>
-      </div>
+      <div class="selector">
+        <button class="arrow left control">◄</button>
         
+        <div class="carrosel-wrapper">
+          <div class="carrosel">
+            <button
+              id="dipper"
+              class="item current-item"
+              style="background-image: url(./assets/images/dipper.png)"
+            ></button>
+            <button
+              id="mabel"
+              class="item"
+              style="background-image: url(./assets/images/mabel.png)"
+            ></button>
+            <button
+              id="stanley"
+              class="item"
+              style="background-image: url(./assets/images/stanley.png)"
+            ></button>
+            <button
+              id="ford"
+              class="item"
+              style="background-image: url(./assets/images/ford.png)"
+            ></button>
+            <button
+              id="soos"
+              class="item"
+              style="background-image: url(./assets/images/soos.png)"
+            ></button>
+            <button
+              id="wendy"
+              class="item"
+              style="background-image: url(./assets/images/wendy.png)"
+            ></button>
+            <button
+              id="gideon"
+              class="item"
+              style="background-image: url(./assets/images/gideon.png)"
+            ></button>
+          </div>
+        </div>
+        <button class="arrow right control">►</button>
+      </div>
     </div>
 
     <script src="./assets/script.js"></script>
