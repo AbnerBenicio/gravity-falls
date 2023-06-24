@@ -72,7 +72,7 @@ body {
   display: flex;
   justify-content: space-between;
   overflow-x: auto;
-  width: 240px;
+  width: 220px;
 }
 
 .carrosel-wrapper::-webkit-scrollbar {
