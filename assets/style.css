@@ -46,7 +46,7 @@
 
 .container img.active {
   display: block;
-  width: 18%;
+  width: 240px;
   animation: slide-right 0.5s linear;
 }
 
